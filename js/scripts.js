@@ -7,8 +7,8 @@ $(document).ready(function() {
       var state = $("#state").val();
       var zip = $("#zip").val();
       var country = $("#country").val();
-      var completeAddress = streetAddress + " " + city + " " + state + " " + zip + " " + country;
-      $("#output-name").text(fullName);
-      $("#output-address").text(completeAddress);
+      var completeAddress = streetAddress + "<br>" + city + "<br>" + state + "<br>" + zip + "<br>" + country;
+      $("#output-name").text("Thank you for your purchase, " + fullName);
+      $("#output-address").html("We will ship your order to:<br>" + completeAddress);
   });
 });
